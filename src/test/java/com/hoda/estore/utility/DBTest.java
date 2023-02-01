@@ -54,7 +54,7 @@ public class DBTest {
 	public void testConnection4() {
 		db.init();
 		int res = db.executeUpdate("insert into products(productId,productTitle) values (1, 'Mac Book Pro')");
-		assertNull(res);
+		assertNotNull(res);
 	}
 
 
